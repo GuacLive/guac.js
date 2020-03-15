@@ -1,0 +1,28 @@
+{
+  "name": "guac.js",
+  "version": "1.0.0",
+  "description": "Client library for guac.live chat",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "dev": "tsc-watch -p tsconfig.json --onSuccess 'node ./test.ts'",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "typecheck": "tsc -p tsconfig.build.json --noEmit",
+    "prepare": "npm run build"
+  },
+  "author": "Thomas Lekanger <datagutt@lekanger.no>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.9.1",
+    "@types/socket.io-client": "^1.4.32"
+  },
+  "dependencies": {
+    "@types/node-fetch": "^2.5.5",
+    "node-fetch": "^2.6.0",
+    "rimraf": "^3.0.2",
+    "socket.io-client": "^2.3.0",
+    "tsc-watch": "^4.2.3",
+    "typescript": "^3.8.3"
+  }
+}
