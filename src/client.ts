@@ -68,7 +68,7 @@ export class Client extends EventEmitter {
 					.then(async response => {
 						const data = await response.json();
 						for(const emote of (<any>Object).values(data)){
-							let url = emoteList.directory !== 'twitch' ? `//emotes.guac.live/global/${emote.id}.png` : `//static-cdn.jtvnw.net/emoticons/v1/${emote.id}/3.0`
+							let url = emoteList.directory !== 'twitch' ? `//emotes.guac.live/${emoteList.directory}/${emote.id}.png` : `//static-cdn.jtvnw.net/emoticons/v1/${emote.id}/3.0`
 							this.emotes[emote.code] = {
 								provider: emoteList.name,
 								url,
