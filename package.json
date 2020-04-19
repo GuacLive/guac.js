@@ -2,7 +2,9 @@
   "name": "@guaclive/guac.js",
   "version": "1.0.1",
   "description": "Client library for guac.live chat",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib/**/*"]
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "dev": "tsc-watch -p tsconfig.json --onSuccess 'node ./test.ts'",
