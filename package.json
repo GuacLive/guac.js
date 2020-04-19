@@ -1,5 +1,5 @@
 {
-  "name": "guac.js",
+  "name": "@guaclive/guac.js",
   "version": "1.0.0",
   "description": "Client library for guac.live chat",
   "main": "index.js",
