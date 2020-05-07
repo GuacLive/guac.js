@@ -87,7 +87,7 @@ export class Client extends EventEmitter {
 		let split = msg && msg.split(' ');
 		let msgs: MessagesInterface = split.map((content) => {
 			return {
-				type: Object.keys(this.emotes).indexOf(content) == 0 ? 'emote' : 'text',
+				type: Object.keys(this.emotes).indexOf(content) >  -1 ? 'emote' : 'text',
 				content: content,
 				author: this.users.get(this.me.id)
 			};
