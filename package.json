@@ -1,6 +1,6 @@
 {
   "name": "@guaclive/guac.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Client library for guac.live chat",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
